@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Dotnet_Project1.Model.Employee>
+
+
+<h2 style="color:crimson; font-family:'Global Sans Serif'; font-size:larger">Employee Details</h2>
+
+<table class="table table-bordered">
+    <tr style="background-color:aquamarine">
+        <th>ID</th>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>ADDRESS</th>
+        <th>MOBILE</th>
+        
+    </tr>
+
+    @foreach (var emp in Model)
+    {
+<tr>
+    <td>@emp.ID</td>
+    <td>@emp.Name</td>
+    <td>@emp.Email</td>
+    <td>@emp.Address</td>
+    <td>@emp.Mobile</td>
+</tr>
+    }
+</table>
+
